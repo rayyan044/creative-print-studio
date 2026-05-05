@@ -3,6 +3,30 @@ import heroImg from "@/assets/hero.jpg";
 import { ServiceCard } from "@/components/ServiceCard";
 import { services } from "@/data/services";
 import { ArrowRight } from "lucide-react";
+import machine1 from "@/assets/machine-1.jpg";
+import machine2 from "@/assets/machine-2.jpg";
+import productSpiceBox from "@/assets/product-spice-box.jpg";
+import productGiftBoxes from "@/assets/product-gift-boxes.jpg";
+import productSpiceCollection from "@/assets/product-spice-collection.jpg";
+import productMedicineBoxes from "@/assets/product-medicine-boxes.jpg";
+import productPaperStack from "@/assets/product-paper-stack.jpg";
+import productLabels from "@/assets/product-labels.jpg";
+import productIncenseLabels from "@/assets/product-incense-labels.jpg";
+
+const machines = [
+  { src: machine1, label: "Industrial Roll Press" },
+  { src: machine2, label: "Offset Printing Press" },
+];
+
+const products = [
+  { src: productSpiceBox, label: "Custom Spice Packaging" },
+  { src: productGiftBoxes, label: "Premium Gift & Wedding Boxes" },
+  { src: productMedicineBoxes, label: "Medicine Boxes" },
+  { src: productSpiceCollection, label: "Branded Spice Box Range" },
+  { src: productLabels, label: "Decorative Product Labels" },
+  { src: productIncenseLabels, label: "Incense & Sleeve Labels" },
+  { src: productPaperStack, label: "Premium Paper Stocks" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -92,7 +116,48 @@ function Index() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Our Machines */}
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <div className="mb-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-teal">Our equipment</p>
+          <h2 className="mt-2 text-4xl md:text-5xl font-extrabold">The machines behind the work.</h2>
+          <p className="mt-4 text-muted-foreground max-w-2xl">
+            Industrial-grade presses and finishing equipment that power every job.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {machines.map((m) => (
+            <figure key={m.label} className="group relative rounded-3xl overflow-hidden border-2 border-foreground shadow-[var(--shadow-pop)]">
+              <img src={m.src} alt={m.label} className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <figcaption className="absolute bottom-0 inset-x-0 bg-ink/80 text-primary-foreground px-5 py-3 text-sm font-semibold">
+                {m.label}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      {/* Our Products */}
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <div className="mb-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-coral">Our work</p>
+          <h2 className="mt-2 text-4xl md:text-5xl font-extrabold">Products we've printed.</h2>
+          <p className="mt-4 text-muted-foreground max-w-2xl">
+            A small sample of packaging, labels and boxes designed and produced in our studio.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {products.map((p) => (
+            <figure key={p.label} className="group relative rounded-3xl overflow-hidden border-2 border-foreground bg-card shadow-[var(--shadow-pop)] hover:-translate-y-1 transition">
+              <img src={p.src} alt={p.label} className="w-full h-56 object-cover" />
+              <figcaption className="px-5 py-3 text-sm font-semibold border-t-2 border-foreground">
+                {p.label}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 pb-8">
         <div className="rounded-3xl bg-primary text-primary-foreground p-12 md:p-16 relative overflow-hidden">
           <div className="absolute -right-12 -top-12 h-64 w-64 rounded-full bg-coral opacity-30 blur-3xl" aria-hidden />
