@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pressmark — Print, Design & Packaging Studio" },
+      { title: "Kara Printing — Print, Design & Packaging Studio" },
       { name: "description", content: "A creative print studio offering books, packaging, exams, lamination, die-cut, binding and card design." },
     ],
   }),
@@ -31,7 +31,7 @@ function Index() {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl">
               From bilingual books and exam booklets to die-cut packaging and
-              wedding invitations — Pressmark is the studio behind print done
+              wedding invitations — Kara Printing is the studio behind print done
               right.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">

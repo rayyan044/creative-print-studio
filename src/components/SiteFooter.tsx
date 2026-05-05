@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
   return (
@@ -6,8 +7,8 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-6 py-12 grid gap-8 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <span className="h-7 w-7 rounded-lg bg-[var(--gradient-hero)]" />
-            <span className="font-display font-extrabold text-lg">Pressmark</span>
+            <img src={logo} alt="Kara Printing logo" className="h-9 w-9 object-contain logo-animate" />
+            <span className="font-display font-extrabold text-lg">KARA PRINTING</span>
           </div>
           <p className="text-sm text-muted-foreground">
             Print, design & packaging crafted with care.
@@ -24,9 +25,9 @@ export function SiteFooter() {
         <div>
           <h4 className="text-sm font-semibold mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>hello@pressmark.example</li>
-            <li>+000 000 0000</li>
-            <li>123 Print Street</li>
+            <li>arafakhamis93@gmail.com</li>
+            <li>0754 054 910</li>
+            <li>Kariakoo – Makonde</li>
           </ul>
         </div>
         <div>
@@ -38,7 +39,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Pressmark. All rights reserved.
+        © {new Date().getFullYear()} Kara Printing. All rights reserved.
       </div>
     </footer>
   );

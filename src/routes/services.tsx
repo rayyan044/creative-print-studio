@@ -5,9 +5,9 @@ import { services } from "@/data/services";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Pressmark Print Studio" },
+      { title: "Services — Kara Printing Print Studio" },
       { name: "description", content: "Books, packaging, exams, lamination, die-cut, printing, binding and stationery design." },
-      { property: "og:title", content: "Services — Pressmark Print Studio" },
+      { property: "og:title", content: "Services — Kara Printing Print Studio" },
       { property: "og:description", content: "Eight print and design services under one roof." },
     ],
   }),

@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/logo.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -11,9 +12,15 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="h-8 w-8 rounded-lg bg-[var(--gradient-hero)] shadow-[var(--shadow-pop)] group-hover:rotate-6 transition-transform" />
-          <span className="font-display font-extrabold text-xl tracking-tight">Pressmark</span>
+        <Link to="/" className="flex items-center gap-2 group logo-animate-hover">
+          <img
+            src={logo}
+            alt="Kara Printing logo"
+            className="h-10 w-10 object-contain logo-animate"
+          />
+          <span className="font-display font-extrabold text-xl tracking-tight">
+            KARA <span className="text-gradient">PRINTING</span>
+          </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((n) => (
