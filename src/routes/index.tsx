@@ -3,6 +3,30 @@ import heroImg from "@/assets/hero.jpg";
 import { ServiceCard } from "@/components/ServiceCard";
 import { services } from "@/data/services";
 import { ArrowRight } from "lucide-react";
+import machine1 from "@/assets/machine-1.jpg";
+import machine2 from "@/assets/machine-2.jpg";
+import productSpiceBox from "@/assets/product-spice-box.jpg";
+import productGiftBoxes from "@/assets/product-gift-boxes.jpg";
+import productSpiceCollection from "@/assets/product-spice-collection.jpg";
+import productMedicineBoxes from "@/assets/product-medicine-boxes.jpg";
+import productPaperStack from "@/assets/product-paper-stack.jpg";
+import productLabels from "@/assets/product-labels.jpg";
+import productIncenseLabels from "@/assets/product-incense-labels.jpg";
+
+const machines = [
+  { src: machine1, label: "Industrial Roll Press" },
+  { src: machine2, label: "Offset Printing Press" },
+];
+
+const products = [
+  { src: productSpiceBox, label: "Custom Spice Packaging" },
+  { src: productGiftBoxes, label: "Premium Gift & Wedding Boxes" },
+  { src: productMedicineBoxes, label: "Medicine Boxes" },
+  { src: productSpiceCollection, label: "Branded Spice Box Range" },
+  { src: productLabels, label: "Decorative Product Labels" },
+  { src: productIncenseLabels, label: "Incense & Sleeve Labels" },
+  { src: productPaperStack, label: "Premium Paper Stocks" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
