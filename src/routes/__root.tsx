@@ -31,9 +31,9 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Pressmark — Print, Design & Packaging Studio" },
+      { title: "Kara Printing — Print, Design & Packaging Studio" },
       { name: "description", content: "Books, packaging, exams, lamination, die-cut, printing, binding and card design — all under one roof." },
-      { property: "og:title", content: "Pressmark — Print, Design & Packaging Studio" },
+      { property: "og:title", content: "Kara Printing — Print, Design & Packaging Studio" },
       { property: "og:description", content: "Books, packaging, exams, lamination, die-cut, printing, binding and card design." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

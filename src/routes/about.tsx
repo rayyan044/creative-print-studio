@@ -4,9 +4,9 @@ import { Check } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Pressmark Print Studio" },
+      { title: "About — Kara Printing Print Studio" },
       { name: "description", content: "A bilingual print and design studio crafting books, packaging and stationery with care." },
-      { property: "og:title", content: "About — Pressmark" },
+      { property: "og:title", content: "About — Kara Printing" },
       { property: "og:description", content: "The team and craft behind every print run." },
     ],
   }),
@@ -30,7 +30,7 @@ function AboutPage() {
             A studio where <span className="text-gradient">ink meets ideas.</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            Pressmark is a full-service print and design studio. We design and produce
+            Kara Printing is a full-service print and design studio. We design and produce
             books in Arabic and English, package products, prepare confidential exam
             materials and craft the small printed things — invitations, ID cards,
             stickers — that tie a brand together.

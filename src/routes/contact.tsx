@@ -7,9 +7,9 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Pressmark Print Studio" },
+      { title: "Contact — Kara Printing Print Studio" },
       { name: "description", content: "Get in touch for quotes on books, packaging, printing, lamination, die-cut and design." },
-      { property: "og:title", content: "Contact — Pressmark" },
+      { property: "og:title", content: "Contact — Kara Printing" },
       { property: "og:description", content: "Request a quote or visit the studio." },
     ],
   }),
