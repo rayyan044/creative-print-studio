@@ -17,9 +17,9 @@ export const Route = createFileRoute("/contact")({
 });
 
 const info = [
-  { icon: Mail, label: "Email", value: "hello@pressmark.example" },
-  { icon: Phone, label: "Phone", value: "+000 000 0000" },
-  { icon: MapPin, label: "Studio", value: "123 Print Street, City" },
+  { icon: Mail, label: "Email", value: "arafakhamis93@gmail.com" },
+  { icon: Phone, label: "Phone", value: "0754 054 910" },
+  { icon: MapPin, label: "Studio", value: "Kariakoo – Makonde" },
   { icon: Clock, label: "Hours", value: "Mon–Fri · 9–6 · Sat 10–2" },
 ];
 

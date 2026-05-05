@@ -88,8 +88,8 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.32 0.12 265);
-  --primary-foreground: oklch(0.985 0.012 90);
+  --primary: oklch(0.65 0.28 350);
+  --primary-foreground: oklch(0.99 0.005 90);
   --secondary: oklch(0.72 0.13 195);
   --secondary-foreground: oklch(0.18 0.04 260);
   --muted: oklch(0.95 0.02 80);
@@ -172,4 +172,22 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(-3deg); }
+}
+@keyframes logo-pulse {
+  0%, 100% { filter: drop-shadow(0 0 0 transparent); transform: scale(1); }
+  50% { filter: drop-shadow(0 6px 14px color-mix(in oklab, var(--coral) 40%, transparent)); transform: scale(1.04); }
+}
+@utility logo-animate {
+  animation: logo-float 4s ease-in-out infinite;
+}
+@utility logo-animate-hover {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.logo-animate-hover:hover {
+  animation: logo-pulse 0.9s ease-in-out;
 }
