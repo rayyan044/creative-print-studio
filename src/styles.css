@@ -73,11 +73,11 @@
   --background: oklch(0.985 0.012 90);
   --foreground: oklch(0.18 0.04 260);
 
-  /* Brand palette - vibrant risograph */
-  --coral: oklch(0.72 0.18 25);
-  --teal: oklch(0.72 0.13 195);
-  --marigold: oklch(0.82 0.16 75);
-  --ink: oklch(0.32 0.12 265);
+  /* Brand palette - CMYK from Kara Printing logo */
+  --coral: oklch(0.65 0.28 350);   /* magenta */
+  --teal: oklch(0.75 0.15 230);    /* cyan */
+  --marigold: oklch(0.86 0.17 90); /* yellow */
+  --ink: oklch(0.18 0.02 260);     /* black */
 
   --gradient-hero: linear-gradient(135deg, var(--coral) 0%, var(--marigold) 50%, var(--teal) 100%);
   --gradient-soft: linear-gradient(180deg, oklch(0.985 0.012 90) 0%, oklch(0.96 0.03 80) 100%);
